@@ -5,6 +5,7 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
+import { ConfirmPage } from '../pages/alert/confirm';
 
 const cloudSettings: CloudSettings = {
   'core': {
@@ -17,7 +18,8 @@ const cloudSettings: CloudSettings = {
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    ListPage
+    ListPage,
+    ConfirmPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -28,7 +30,8 @@ const cloudSettings: CloudSettings = {
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    ListPage
+    ListPage,
+    ConfirmPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
