@@ -6,6 +6,8 @@ import { MyTeamsPage } from '../pages/pages';
 import { TournamentsPage } from '../pages/pages';
 import { TeamsPage } from '../pages/pages';
 import { TeamDetailPage } from '../pages/pages';
+import { StandingsPage } from '../pages/pages';
+import { TeamHomePage } from '../pages/pages';
 
 const cloudSettings: CloudSettings = {
   'core': {
@@ -19,7 +21,9 @@ const cloudSettings: CloudSettings = {
     MyTeamsPage,
     TournamentsPage,
     TeamsPage,
-    TeamDetailPage
+    TeamDetailPage,
+    StandingsPage,
+    TeamHomePage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -31,7 +35,9 @@ const cloudSettings: CloudSettings = {
     MyTeamsPage,
     TournamentsPage,
     TeamsPage,
-    TeamDetailPage
+    TeamDetailPage,
+    StandingsPage,
+    TeamHomePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

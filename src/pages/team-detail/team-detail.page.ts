@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { TeamsPage } from '../pages';
 
 @Component({
   selector: 'page-team-detail',
@@ -14,6 +13,5 @@ export class TeamDetailPage {
     this.team = this.navParams.data;
     console.log('***nav params: ', this.navParams);
   }
-
 
 }
