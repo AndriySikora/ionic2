@@ -8,9 +8,9 @@
 
   <ion-content>
     <ion-list>
-      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
+      <ion-list-header>Navigate</ion-list-header>
+      <button ion-item (click)="goHome()">Home</button>
+      <button ion-item (click)="goToTournaments()">Find A Tournament</button>
     </ion-list>
   </ion-content>
 

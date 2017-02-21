@@ -1,11 +1,11 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
 import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
-import { ConfirmPage } from '../pages/alert/confirm';
+import { MyTeamsPage } from '../pages/pages';
+import { TournamentsPage } from '../pages/pages';
+import { TeamsPage } from '../pages/pages';
+import { TeamDetailPage } from '../pages/pages';
 
 const cloudSettings: CloudSettings = {
   'core': {
@@ -16,10 +16,10 @@ const cloudSettings: CloudSettings = {
 @NgModule({
   declarations: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
-    ConfirmPage
+    MyTeamsPage,
+    TournamentsPage,
+    TeamsPage,
+    TeamDetailPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -28,10 +28,10 @@ const cloudSettings: CloudSettings = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
-    ConfirmPage
+    MyTeamsPage,
+    TournamentsPage,
+    TeamsPage,
+    TeamDetailPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
